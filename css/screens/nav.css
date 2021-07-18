@@ -1,0 +1,83 @@
+.main__nav {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #e4c7bf;
+  z-index: 1;
+}
+
+.main__nav__gnb {
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0px auto;
+  margin-left: 600px;
+  color: white;
+}
+
+.main__nav__gnb > li {
+  width: 10%;
+  height: 80px;
+  font-size: 16px;
+  margin-left: 25px;
+  opacity: 0.8;
+}
+
+.main__nav__gnb > li:hover {
+  font-size: 16px;
+  font-weight: bold;
+  background-color: white;
+  opacity: 1;
+  transition: ease-in-out;
+  color: #e4c7bf;
+}
+
+.main__nav__gnb > li:hover > a {
+  transform: scale(1.2);
+}
+
+.main__nav__gnb > li > a {
+  display: block;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.name > input,
+.list > input {
+  width: 1000px;
+  height: 90px;
+  background-color: #a09db1;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  padding: 0px 30px;
+  box-sizing: border-box;
+  position: relative;
+  text-align: center;
+}
+
+.name > input::placeholder,
+.list > input::placeholder {
+  font-size: 24px;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.name > button,
+.list > button {
+  width: 10%;
+  height: 50px;
+  background-color: #9897ae;
+  color: white;
+  font-size: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  position: absolute;
+  right: 330px;
+  margin-top: 20px;
+}
+
+.list {
+  margin-top: 60px;
+}

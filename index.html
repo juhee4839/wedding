@@ -8,42 +8,45 @@
     <title>Wedding</title>
   </head>
   <body>
-    <nav>
-      <h1 class="logo"></h1>
-      <ul class="gnb">
+    <nav class="main__nav">
+      <h1 class="main__nav__logo"></h1>
+      <ul class="main__nav__gnb">
         <li><a href="#">소개</a></li>
         <li><a href="#">스튜디오</a></li>
         <li><a href="#">드레스</a></li>
         <li><a href="#">메이크업</a></li>
         <li><a href="#">웨딩홀</a></li>
         <li><a href="#">플래너찾기</a></li>
-        <li><a href="#">MY웨딩플랜</a></li>
+        <li><a href="#">MY플랜</a></li>
       </ul>
     </nav>
     <section class="bg"></section>
     <!--배경-->
-    <section>
-      <article>
-        <h1>2021년</h1>
-        <h5>웨딩트렌드</h5>
-        <p>당신을 위한 할인혜택이 기다리고 있습니다</p>
+    <section class="gretting">
+      <article class="gretting__txtboxes">
+        <div class="gretting__txtbox">
+          <h1>2021년</h1>
+          <h5>웨딩트렌드</h5>
+          <p>당신을 위한 할인혜택이 기다리고 있습니다</p>
+        </div>
+        <div class="gretting__txtbox">
+          <h1>2022년</h1>
+          <h5>나만의 웨딩플랜</h5>
+          <p>맞춤 플래너 찾기 <a href="#">&rarr;</a></p>
+        </div>
       </article>
-      <article>
-        <h1>2022년</h1>
-        <h5>나만의 웨딩플랜</h5>
-        <p>맞춤 플래너 찾기 <a href="#">&rarr;</a></p>
-      </article>
-      <article>
+      <article class="gretting__todo__text">
         <h5>예비신랑, 신부의 웨딩첫걸음</h5>
-        <h5>리스트 적어놓고 준비해보세요</h5>
+        <h5>TO-DO LIST와 함께 준비해보세요</h5>
       </article>
-      <form>
-        <input type="text" required max="15" />
+      <form class="name">
+        <input type="text" required max="15" placeholder="Write your name" />
         <button>CLICK</button>
         <h1></h1>
       </form>
-      <form>
-        <input type="text" required />
+      <form class="list">
+        <input type="text" required placeholder="What do you want to do?" />
+        <button>CLICK</button>
       </form>
     </section>
     <section>
