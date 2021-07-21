@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
+    <!--font awesome CDN-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
     <title>Wedding</title>
   </head>
   <body>
@@ -32,22 +34,44 @@
         <div class="gretting__txtbox">
           <h1>2022년</h1>
           <h5>나만의 웨딩플랜</h5>
-          <p>맞춤 플래너 찾기 <a href="#">&rarr;</a></p>
+          <p><a href="#">맞춤 플래너 찾기 &rarr;</a></p>
         </div>
       </article>
       <article class="gretting__todo__text">
         <h5>예비신랑, 신부의 웨딩첫걸음</h5>
         <h5>TO-DO LIST와 함께 준비해보세요</h5>
       </article>
-      <form class="name">
-        <input type="text" required max="15" placeholder="Write your name" />
-        <button>CLICK</button>
-        <h1></h1>
-      </form>
-      <form class="list">
-        <input type="text" required placeholder="What do you want to do?" />
-        <button>CLICK</button>
-      </form>
+      <article class="greeting__form">
+        <form class="name hidden" id="login-form">
+          <input type="text" required maxlength="15" placeholder="Write your name?" />
+          <button>Log In</button>
+        </form>
+        <h1 id="greeting" class="hidden"></h1>
+        <form class="list" id="todo-form">
+          <input type="text" required placeholder="What do you want to do?" />
+          <button>click</button>
+        </form>
+        <ul id="todo-list"></ul>
+      </article>
+    </section>
+    <section class="expo">
+        <div class="expo__clock">  
+          <h5 id="clock"></h5>
+        </div>
+        <form>
+          <span>박람회 사전예약 접수</span>
+          <a href="#"><i class="fas fa-chevron-right"></i></a>
+        </form>
+        <div class="slide">
+          <ul>
+            <li><img src="img/5.jpg"></li>
+            <li><img src="img/edit6.png"></li>
+            <li><img src="img/edit8.png"></li>
+            <li><img src="img/edit11.png"></li>
+          </ul>
+          <a class="left" href="#"><i class="fas fa-chevron-left"></i></a>
+          <a class="right" href="#"><i class="fas fa-chevron-right"></i></a>
+       </div>
     </section>
     <section>
       <article>
@@ -95,5 +119,9 @@
         <div><img src="#" /></div>
       </article>
     </section>
+    <script src="js/clock.js"></script>
+    <script src="js/slide.js"></script>
+    <script src="js/greeting.js"></script>
+    <script src="js/todo.js"></script>
   </body>
 </html>

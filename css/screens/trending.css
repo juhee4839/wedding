@@ -2,6 +2,8 @@
   width: 100%;
   height: 800px;
   background: url(../../img/333.png) center;
+  background-size: cover;
+  
 }
 
 /*gretting serction*/
@@ -50,7 +52,7 @@
 /*리스트 텍스트*/
 .gretting__todo__text {
   width: 30%;
-  margin: 160px 500px 70px 50px;
+  margin: 160px 500px 70px 160px;
 }
 
 .gretting__todo__text > h5 {
@@ -60,3 +62,211 @@
 .gretting__todo__text > h5:nth-child(2) {
   margin-left: 70px;
 }
+
+.name,
+.list {
+  width:100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+.name > input,
+.list > input {
+  width: 500px;
+  height: 90px;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  border-bottom:2px solid #9897ae;
+  padding: 0px 30px;
+  box-sizing: border-box;
+  position: relative;
+  text-align: center;
+  margin-top:100px;
+  margin-right:30%;
+}
+
+
+
+.name > input:hover,
+.list > input:hover{
+  border-bottom:2px solid #403f58;
+} 
+
+
+.name > input::placeholder,
+.list > input::placeholder {
+  font-size: 24px;
+  color: #403f58;
+}
+
+.name:hover > input::placeholder,
+.list:hover > input::placeholder {
+  opacity: 0.3;
+}
+.name > button,
+.list > button {
+  width: 150px;
+  height: 40px;
+  background-color: #9897ae;
+  color: white;
+  font-size: 14px;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  margin-top: 130px;
+  cursor:pointer;
+}
+
+.list {
+  margin-top: 60px;
+}
+
+/*greeting 되었을때!*/
+
+#greeting{
+  text-align: center;
+  font-size: 38px;
+  font-weight: bold;
+  margin-top:100px;
+  color:#574f4d;
+}
+
+
+
+#todo-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin:50px 0px 0px 100px;
+  color:#574f4d;
+}
+#todo-list > li{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height:40px;
+
+}
+
+#todo-list > li > button{
+  width:30px;
+  height:30px;
+  border-radius: 5px;
+  border: 0.1px solid #574f4d;
+  color: #574f4d;
+  cursor:pointer;
+  margin-left:10px;
+}
+
+
+
+
+
+
+
+/*박람회 expo*/
+
+.expo{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 1000px;
+  margin-top:100px;
+}
+
+.expo__clock{
+  margin-top: 30px;
+}
+
+.expo__clock >  h5 {
+  line-height: 100px;
+  font-size: 60px;
+  color:#574f4d;
+
+}
+
+.expo span{
+  font-size: 48px ;
+  font-weight: bold;
+}
+
+.expo__clock > h5{
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.expo > form{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.expo > form >  span{  
+  color:#292524;
+}
+
+.expo > form > a{
+  margin-left:10px
+}
+
+.expo > form i {
+  font-size:28px;
+  opacity: 0.4;
+}
+
+.expo > form i:hover {
+  opacity: 1;
+  transform: scale(1.2);
+
+}
+
+
+/*이미지 슬라이드*/
+.slide{
+  width:1200px;
+  height:700px;
+  position:relative;
+  overflow: hidden;
+  margin:auto;
+  margin-top:70px;
+
+}
+
+.slide >ul {
+  width:300%;
+  position:absolute;
+  top:0;
+  left:0;
+}
+
+.slide > ul > li {
+  float:left;
+}
+
+.slide > a {
+  position:absolute;
+  top:50%;
+  transform:translateY(-50%);
+  font-size: 20px;
+  color:black;
+  font-weight:bold;
+  text-align: center;
+  display:block;
+  width:50px;
+  height:50px;
+  border-radius: 50%;
+  background-color: rgba(255,255,255,0.8);
+  padding:15px 5px 0px 0px;
+  box-sizing: border-box;
+
+}
+
+.left{left:10px;}
+.right{right:10px;}
+
+
+

@@ -7,11 +7,16 @@
 /*screen*/
 @import url(screens/nav.css);
 @import url(screens/trending.css);
+@import url(screens/studio.css);
 
 body {
   width: 100%;
-  max-width: 1900px;
   margin: auto;
   box-sizing: border-box;
   color: inherit;
+}
+
+
+.hidden{
+  display: none;
 }
