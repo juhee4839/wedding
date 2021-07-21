@@ -28,6 +28,22 @@ function leftSlide(e){
 
 function rightSlide(e){
     e.preventDefault();
+    if(scrollEvent = false)return false;
+    let current = -imgWd;
+    const last = slide.querySelector("li:last-child");
+    slide.prepend(last);
+    slide.style.left = -imgWd+"px";
+    function handleTimer_right(){
+        current += 50;
+        slide.style.left = current + "px";
+        if(current >=0){
+            clearTimeout(timer);
+            scrollEvent = true;
+        }
+    }
+    let timer = setInterval(handleTimer_right,1000/60);
+    scrollEvent = false;
+
 
 }
 
