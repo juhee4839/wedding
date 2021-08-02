@@ -6,8 +6,10 @@
 
 /*screen*/
 @import url(screens/nav.css);
+@import url(screens/intro.css);
 @import url(screens/trending.css);
 @import url(screens/studio.css);
+@import url(screens/dress.css);
 
 body {
   width: 100%;
@@ -16,7 +18,6 @@ body {
   color: inherit;
 }
 
-
-.hidden{
+.hidden {
   display: none;
 }
